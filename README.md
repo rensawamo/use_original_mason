@@ -1,16 +1,29 @@
-# use_original_mason
+# use ren_mason
 
-A new Flutter project.
+[![Powered by Mason](https://img.shields.io/endpoint?url=https%3A%2F%2Ftinyurl.com%2Fmason-badge)](https://github.com/felangel/mason)
 
-## Getting Started
+[mason](https://pub.dev/packages/mason)
 
-This project is a starting point for a Flutter application.
+### ren_mason という名前で公開している global masonをこちらから呼び出してみる
+```shell
+$ mason make ren_mason 
 
-A few resources to get you started if this is your first Flutter project:
+? rens (ReN) ReN
+✓ Generated 2 files. (0.1s)
+  created HELLO.md
+  created ReN.dart
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 上記は ren_masonを作成時の brick.yamlで指定したものである
+```shell
+vars:
+  name:
+    type: string
+    description: mason を導入します！
+    default: ReN
+    prompt: rens
+```
+
+### 結果としてルートディレクトリに dartファイルが作成される
+![img.png](img.png)
